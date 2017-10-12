@@ -1,3 +1,6 @@
+Reference
+https://medium.freecodecamp.org/async-operations-using-redux-saga-2ba02ae077b3
+https://scotch.io/tutorials/build-a-media-library-with-react-redux-and-redux-saga-part-1
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

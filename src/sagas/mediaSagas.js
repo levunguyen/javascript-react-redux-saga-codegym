@@ -8,11 +8,13 @@ export default function* searchMediaSaga({ payload }) {
         const videos = yield call(shutterStockVideos, payload);
         const images = yield call(flickrImages, payload);
         yield [
+            //put means dispatch an action
             put({ type: types.SHUTTER_VIDEOS_SUCCESS, videos }),
             put({ type: types.SELECTED_VIDEO, video: videos[0] }),
             put({ type: types.FLICKR_IMAGES_SUCCESS, images }),
             put({ type: types.SELECTED_IMAGE, image: images[0] })
         ];
+        console.log("Saga is called");
     } catch (error) {
         yield put({ type: 'SEARCH_MEDIA_FAILURE', error });
     }

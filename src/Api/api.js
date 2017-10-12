@@ -16,6 +16,7 @@ const authParameters = {
  * @return { Array }
  */
 export const shutterStockVideos = (searchQuery) => {
+    console.log("Call API shutter to get videos");
     const SHUTTERSTOCK_API_ENDPOINT = `https://api.shutterstock.com/v2/videos/search?
   query=${searchQuery}&page=1&per_page=10`;
 
@@ -38,7 +39,7 @@ export const shutterStockVideos = (searchQuery) => {
  * @return { Array }
  */
 export const flickrImages = (searchQuery) => {
-    console.log("test");
+    console.log("Call API Flick to get images");
     const FLICKR_API_ENDPOINT = `https://api.flickr.com/services/rest/?method=flickr.photos.search&text=${searchQuery}&api_key=${FLICKR_API_KEY}&format=json&nojsoncallback=1&per_page=10`;
 
     return fetch(FLICKR_API_ENDPOINT)
