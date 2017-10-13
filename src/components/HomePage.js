@@ -3,14 +3,26 @@ import { Link } from 'react-router';
 
 // Home page component. This serves as the welcome page with link to the library
 const HomePage = () => (
-    <div className="jumbotron center">
-        <h1 className="lead">Welcome to Media Library built with React, Redux, and Redux-saga </h1>
-        <div>
-            <Link to="library">
-                <button > Visit Library</button>
-            </Link>
-        </div>
-    </div>
+    <section>
+        <div id="bannervideo">
+            <div>
+                <div className="item">
+                    <img src="img/first.jpg" alt="" />
+                        <div className="carousel-text">
+                            <div className="line">
+                                <div className="s-12 l-9">
+                                    <h2>Theme based on Responsee framework</h2>
+                                </div>
+                                <div className="s-12 l-9">
+                                    <p>With amazing responsive carousel
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 );
 
 export default HomePage;

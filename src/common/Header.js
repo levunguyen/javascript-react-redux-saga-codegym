@@ -12,7 +12,8 @@ const Header = () => (
                     <p className="nav-text">Custom menu text</p>
                     <div className="top-nav s-12 l-5">
                         <ul className="right top-ul chevron">
-                            <li><a href="index.html">Home</a>
+                            <li>
+                                <IndexLink to="/" activeClassName="active">Home</IndexLink>
                             </li>
                             <li><a href="product.html">Product</a>
                             </li>
@@ -27,7 +28,8 @@ const Header = () => (
                     </ul>
                     <div className="top-nav s-12 l-5">
                         <ul className="top-ul chevron">
-                            <li><a href="gallery.html">Gallery</a>
+                            <li>
+                                <Link to="library" activeClassName="active">Gallery</Link>
                             </li>
                             <li>
                                 <a>Company</a>
