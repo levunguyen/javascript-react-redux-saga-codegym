@@ -23,7 +23,7 @@ const Header = () => (
                     </div>
                     <ul className="s-12 l-2">
                         <li className="logo hide-s hide-m">
-                            <a href="index.html">DESIGN <br /><strong>THEME</strong></a>
+                            <img src="img/codegymlogo.png" alt="Codegym" />
                         </li>
                     </ul>
                     <div className="top-nav s-12 l-5">
@@ -35,7 +35,7 @@ const Header = () => (
                                 <a>Chương Trình Đào Tạo</a>
                                 <ul>
                                     <li>
-                                        <Link to="library" activeClassName="active">FullStack</Link>
+                                        <Link to="fullstack" activeClassName="active">FullStack</Link>
                                     </li>
                                     <li><a>Premium</a>
                                     </li>
@@ -44,7 +44,7 @@ const Header = () => (
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a>
+                            <li><Link to="contact" activeClassName="active">Contact</Link>
                             </li>
                         </ul>
                     </div>
