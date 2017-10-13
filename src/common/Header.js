@@ -32,22 +32,15 @@ const Header = () => (
                                 <Link to="library" activeClassName="active">Gallery</Link>
                             </li>
                             <li>
-                                <a>Company</a>
+                                <a>Chương Trình Đào Tạo</a>
                                 <ul>
-                                    <li><a>Company 1</a>
+                                    <li>
+                                        <Link to="library" activeClassName="active">FullStack</Link>
                                     </li>
-                                    <li><a>Company 2</a>
+                                    <li><a>Premium</a>
                                     </li>
                                     <li>
                                         <a>Company 3</a>
-                                        <ul>
-                                            <li><a>Company 3-1</a>
-                                            </li>
-                                            <li><a>Company 3-2</a>
-                                            </li>
-                                            <li><a>Company 3-3</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                 </ul>
                             </li>
