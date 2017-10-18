@@ -1,8 +1,10 @@
 import React, { PropTypes, Component } from 'react';
 import News from "../components/News";
+import {getNewsToday,searchMediaAction} from "../actions/newActions";
+import { connect } from 'react-redux';
 
 
-export default class NewsPage extends Component {
+class NewsPage extends Component {
 
 
     constructor() {
@@ -10,7 +12,8 @@ export default class NewsPage extends Component {
     }
 
     componentDidMount() {
-
+        console.log("Dispath action call api");
+        this.props.dispatch(getNewsToday());
     }
 
     render() {
@@ -20,3 +23,12 @@ export default class NewsPage extends Component {
     }
 
 }
+
+// Subscribe component to redux store and merge the state into component's props
+const mapStateToProps = ({ news }) => ({
+   news : news
+});
+
+// connect method from react-router connects the component with redux store
+export default connect(
+    mapStateToProps)(NewsPage);
