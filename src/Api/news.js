@@ -12,7 +12,7 @@ const authParameters = {
 };
 
 export const getAllNewsToday = () => {
-   console.log("GOI API HERE $$$$$$$$$$$$$$$$$$");
+   console.log("4->Receive getNewsToday from Saga and calling API to return the result");
    return {
        title : "Bao moi",
        description : "ABCD"

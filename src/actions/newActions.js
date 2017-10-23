@@ -1,7 +1,11 @@
 import * as types from '../constants/actionTypes';
 
 export const getNewsToday = () =>{
-    type : types.GET_NEWS_TODAY
+  console.log("2-> Action getNewsToday in actions/newActions is called then calling the News saga")
+
+  return {
+      type : types.GET_NEWS_TODAY
+  }
 }
 
 

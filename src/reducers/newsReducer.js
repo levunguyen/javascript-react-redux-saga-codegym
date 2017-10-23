@@ -3,10 +3,9 @@ import initialState from './initialState';
 
 // Handles image related actions
 export default function (state = initialState.images, action = null) {
-    console.log("After saga to get News BB",action.type);
     switch (action.type) {
-        case types.GET_NEWS_TODAY:
-            console.log("After saga to get News !!!!!!!!");
+        case types.GET_NEWS_TODAY_SUCCESSS:
+            console.log("6-> News Reducer get result from news saga dispacher", action.news);
             return [...state, action.news];
 
         default:

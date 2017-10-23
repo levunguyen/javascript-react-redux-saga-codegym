@@ -12,13 +12,15 @@ class NewsPage extends Component {
     }
 
     componentDidMount() {
-        console.log("Dispath action call api");
+        console.log("1-> Dispath action from  Newspage Component");
         this.props.dispatch(getNewsToday());
     }
 
     render() {
+        const {news} = this.props;
+        console.log("7-> News Container Receive from reducer and passing it to News component " , news);
         return (
-            <News />
+            <News news={news}/>
         );
     }
 

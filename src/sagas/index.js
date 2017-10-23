@@ -5,4 +5,5 @@ import newsWatcher from './newsWatcher'
 // function (startForeman) as our root Saga.
 export default function* startForman() {
     yield fork(watchSearchMedia);
+    yield fork(newsWatcher);
 }
